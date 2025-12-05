@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>1-sinf Tabiiy fanlar</title>
+  <link rel="stylesheet" href="science-style.css">
+</head>
+<body>
+
+  <header class="hdr">
+    <div class="logo">📗 Tabiiy fan — 1-sinf</div>
+    <div class="note">Qisqa darslar · Ovoz bilan o‘qib beriladi</div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="intro card">
+      <h1>Tabiiy fanlar</h1>
+      <p class="lead">Tanlang dars — qisqa, rasmli va ovoz bilan</p>
+      <div class="controls">
+        <input id="search" placeholder="Dars nomi yoki raqam qidiring..." />
+      </div>
+    </section>
+
+    <section id="lessonsGrid" class="grid"></section>
+
+    <section id="lessonView" class="card lesson-view" style="display:none;">
+      <div class="lv-header">
+        <button id="backBtn" class="small">⬅ Orqaga</button>
+        <h2 id="lv-title"></h2>
+      </div>
+
+      <div id="lv-body" class="lv-body">
+        <div id="lv-img" class="thumb"></div>
+        <p id="lv-text" class="lv-text"></p>
+        <div class="lv-actions">
+          <button id="readBtn" class="primary">🔊 Oʻqib ber</button>
+          <button id="quizBtn" class="outline">❓ Quiz</button>
+        </div>
+        <div id="quizArea" style="display:none;" class="quiz-area"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ftr">
+    <small>Oddiy va diqqatni jamlashga yordamlashuvchi darslar — katta matn va ovoz</small>
+  </footer>
+
+<script src="science-script.js"></script>
+</body>
+</html>
